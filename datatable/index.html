@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="datatables.min.css">
+    <title>Datatable Task</title>
+</head>
+<body>
+    <div class="container text-center heading mt-3 mb-3">
+        <h2>Crud Operations Using Datatables</h2>
+    </div>
+
+    <div class="container text-center getmodal">
+        <button class="btn btn-warning text-center" id="GetModalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Click Me to Get Modal
+        </button>
+    </div>
+
+    <div class="container text-center savedtable mt-4">
+        <table class="table table-bordered table-responsive table-dark table-hover" id="SavedTable">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Marks</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- Modal -->
+<div class="modal modal-dialog modal-dialog-centered fade text-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="" onsubmit="return false" id="form">
+        <div class="mb-2">
+           Name: <input type="text" class="ms-3" placeholder="Enter Your Name Here" id="name" required>
+        </div>
+        <div class="mb-2">
+           Email: <input type="text" class="ms-3" placeholder="Enter Your Email Here" id="email" required>
+        </div>
+        <div class="mb-2">
+           Marks: <input type="number" class="ms-3" placeholder="Enter Your Marks Here" id="mark" required>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"  id="Savebtn">Save changes</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="jquery-3.6.3.js"></script>
+<script src="datatables.min.js"></script>
+<script src="script.js"></script>
+</html>

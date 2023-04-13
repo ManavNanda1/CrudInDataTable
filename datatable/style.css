@@ -1,0 +1,80 @@
+/* Basic Styling  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: rgb(41, 39, 39) !important;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+.filled-input {
+    background-color: #ffa;
+  }
+  
+
+/* Heading Styling*/
+.heading{
+    border: 2px solid white;
+    background-color: rgb(96, 96, 243);
+    border-radius: 20px;
+
+}
+.heading:hover{
+    border: 4px solid white;
+    border-radius: 25px;
+    transition: 0.5s ease-in;
+    color: red;
+    background-color: black;
+}
+
+  /*Modal Styling  */
+  .modal-backdrop {
+    background-color: rgba(0,0,0,0.5) !important;
+  }
+  
+  .modal-content {
+    background-color: #333 !important;
+    color: #f7abab !important;
+  }
+
+  /* Button Styling  */
+  #GetModalBtn{
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  #GetModalBtn:hover{
+    border: 4px solid white;
+    border-radius: 25px;
+    background-color: rgb(121, 182, 240);
+    color: black;
+    transition: 0.5s ease-in-out;
+  }
+  
+
+/* Input Styling */
+input{
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Search Bar Styling */
+#SavedTable_filter{
+    color: white !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dataTables_length{
+    color: white !important;
+    text-align: center;
+    margin-top: 10px;
+}
